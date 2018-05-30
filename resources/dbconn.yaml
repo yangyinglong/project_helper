@@ -1,0 +1,4 @@
+sdata:
+  engine: mysql://lqn:YYlc8888@localhost:3306/sdata?charset=utf8
+  tableschema: 'Crawler'
+  tablename: 'fixed_asset_extend'

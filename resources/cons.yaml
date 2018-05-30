@@ -1,0 +1,4 @@
+mapper:
+ base_package_path: 'com.yylc.sdata.spidermanws'
+ blank : ' '
+ br : '\n'
