@@ -1,4 +1,4 @@
 mapper:
- base_package_path: 'com.yylc.sdata.spidermanws'
+ base_package_path: 'com.leshuibao.fragmentTax'
  blank : ' '
  br : '\n'

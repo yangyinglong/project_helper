@@ -7,7 +7,7 @@ import os
 
 
 def project_path():
-    return os.path.abspath(os.path.dirname(__file__)).replace('/util', '')
+    return os.path.abspath(os.path.dirname(__file__)).replace('\\util', '')
 
 
 def open_file(package_path, filename):

@@ -1,4 +1,4 @@
 sdata:
-  engine: mysql://lqn:YYlc8888@localhost:3306/sdata?charset=utf8
-  tableschema: 'Crawler'
-  tablename: 'fixed_asset_extend'
+  engine: mysql://root:wonongtz9@93.90.74.180:3306/invoice?charset=utf8
+  tableschema: 'invoice'
+  tablename: 'user'

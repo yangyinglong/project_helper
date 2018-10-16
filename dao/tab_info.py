@@ -4,9 +4,9 @@ import pymysql
 
 # TODO Will be replaced by SQLAlchemy for multi-connection issue
 def tabinfo(tableschema, tablename):
-    conn = pymysql.connect(host='122.144.217.112',
-                           port=13306, user='pc_user1',
-                           passwd='PPydckke8762',
+    conn = pymysql.connect(host='93.90.74.180',
+                           port=3306, user='root',
+                           passwd='wonongtz9',
                            db='information_schema',
                            charset='utf8')
 

@@ -16,6 +16,7 @@ def add_semicolon(val):
 
 
 def cons_mapper():
+    print(project_path())
     with open(project_path() + '/resources' + '/cons.yaml', 'r') as f:
         mapper = yaml.load(f.read())['mapper']
         base_package_path = mapper['base_package_path']
@@ -26,7 +27,7 @@ def cons_mapper():
 
 
 def db_url():
-    with open(project_path() + '/resources' + '/dbconn.yaml', 'r') as f:
+    with open(project_path() +'/resources' + '/dbconn.yaml', 'r') as f:
         yaml.load(f.read())
 
         return yaml.load(f.read())
@@ -53,6 +54,14 @@ def datatype_convert(datatype):
         return 'String'
     elif datatype == 'datetime':
         return 'Timestamp'
+    elif datatype == 'decimal':
+        return 'float'
+    elif datatype == 'numeric':
+        return 'float'
+    elif datatype == 'double':
+        return 'float'
+    elif datatype == 'float':
+        return 'float'
     else:
         return 'String'
 

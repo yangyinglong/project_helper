@@ -89,7 +89,7 @@ def imapper_gen(tableschema, tablename):
         results_gen(tab) +
         uc_tablename + 'Entity queryByKey(' + keys_para + ');\n\n')
     file.writelines(
-        '@Insert("INSERT INTO `' + tablename + '(' + columns_query + ')` VALUES(' + columns_insert + ')")\n')
+        '@Insert("INSERT INTO `' + tablename + '`(' + columns_query + ') VALUES(' + columns_insert + ')")\n')
     file.writelines('void insert(' + uc_tablename + 'Entity ' + tablename + 'Entity);\n\n')
     file.writelines('@Update("UPDATE `' + tablename + '` SET ' + columns_update + ' WHERE ' + keys_exp + '")\n' +
                     'void update(' + uc_tablename + 'Entity ' + tablename + 'Entity);\n\n')
