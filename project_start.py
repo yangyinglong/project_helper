@@ -2,6 +2,8 @@ from scriptGen.entity import entity_gen
 from scriptGen.imapper import imapper_gen
 
 if __name__ == '__main__':
+    datebase = 'invoice'
+    table = 'sms_log'
     # entity_gen('invoice', 'user')
     # imapper_gen('invoice', 'user')
     #
@@ -32,7 +34,7 @@ if __name__ == '__main__':
     # entity_gen('invoice', 'payment')
     # imapper_gen('invoice', 'payment')
 
-    entity_gen('invoice', 'sms_log')
-    imapper_gen('invoice', 'sms_log')
+    entity_gen(datebase, table)
+    imapper_gen(datebase, table)
 
 
